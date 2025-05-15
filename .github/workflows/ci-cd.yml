@@ -1,4 +1,4 @@
-name: Build and deploy Node.js app to Azure Web App - helloworld-owen
+name: Build and deploy app to Azure - helloworld-owen
 
 on:
   push:
@@ -99,6 +99,5 @@ jobs:
           from: github-actions@yourdomain.com
           body: |
             Workflow: ${{ github.workflow }}
-            Deploy status: ${{ needs.deploy.job-status }}
             Build doorlooptijd: ${{ steps.calc-duration.outputs.duration }} seconden
             Bekijk de workflow run hier: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
