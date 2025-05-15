@@ -10,7 +10,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     permissions:
-      contents: read # required for actions/checkout
+      contents: read
     steps:
       - uses: actions/checkout@v4
 
@@ -57,5 +57,5 @@ jobs:
         with:
           app-name: 'helloworld-owen'
           slot-name: 'Production'
-          package: '.'  # nu in root na unzip
+          package: '.'
           publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_C1FAD1F90E1E4E5CB31AF2C06E136260 }}
