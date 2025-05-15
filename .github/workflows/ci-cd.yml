@@ -85,5 +85,3 @@ jobs:
             Workflow: ${{ github.workflow }} is voltooid
 
             Totale duur: ${{ steps.calc-duration.outputs.duration }}
-
-            Bekijk run: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
