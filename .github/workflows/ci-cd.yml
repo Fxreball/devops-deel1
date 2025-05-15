@@ -80,7 +80,7 @@ jobs:
           password: ${{ secrets.SMTP_PASSWORD }}
           subject: Workflow ${{ github.workflow }} afgerond
           to: ${{ secrets.NOTIFY_EMAIL }}
-          from: GitHub-update@owencoenraad.nl
+          from: HelloWorld-Owen Updates
           body: |
             Workflow: ${{ github.workflow }} is voltooid.
 
